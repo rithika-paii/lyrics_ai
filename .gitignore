@@ -2,3 +2,23 @@ venv/
 .env
 __pychache__
 songs.db
+cat >> .gitignore << 'EOF'
+# Secrets
+.env
+.spotify_token_cache
+.cache
+
+# Database
+songs.db
+
+# Audio files
+audio/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual env
+venv/
+EOF
